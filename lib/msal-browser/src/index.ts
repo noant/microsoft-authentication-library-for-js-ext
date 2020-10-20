@@ -32,4 +32,4 @@ export {
     ILoggerCallback,
     Logger,
     LogLevel
-} from "@azure/msal-common";
+} from "msal-common-ext";

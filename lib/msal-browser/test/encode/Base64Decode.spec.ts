@@ -1,9 +1,9 @@
 import { expect } from "chai";
 import { Base64Decode } from "../../src/encode/Base64Decode";
-import { IdTokenClaims, Constants } from "@azure/msal-common";
+import { IdTokenClaims, Constants } from "msal-common-ext";
 import { TEST_DATA_CLIENT_INFO, TEST_URIS, TEST_CONFIG, RANDOM_TEST_GUID } from "../utils/StringConstants";
 import { Base64Encode } from "../../src/encode/Base64Encode";
-import { AuthorizationCodeRequest } from "@azure/msal-common";
+import { AuthorizationCodeRequest } from "msal-common-ext";
 
 describe("Base64Decode.ts Unit Tests", () => {
 

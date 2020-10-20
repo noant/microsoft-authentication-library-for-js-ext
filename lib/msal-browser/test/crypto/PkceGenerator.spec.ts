@@ -3,7 +3,7 @@ import { BrowserCrypto } from "../../src/crypto/BrowserCrypto";
 import crypto from "crypto";
 import sinon from "sinon";
 import { PkceGenerator } from "../../src/crypto/PkceGenerator";
-import { PkceCodes } from "@azure/msal-common";
+import { PkceCodes } from "msal-common-ext";
 import { NUM_TESTS } from "../utils/StringConstants";
 
 describe("PkceGenerator.ts Unit Tests", () => {

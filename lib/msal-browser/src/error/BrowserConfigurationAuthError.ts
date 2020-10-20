@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Licensed under the MIT License.
  */
-import { AuthError } from "@azure/msal-common";
+import { AuthError } from "msal-common-ext";
 
 /**
  * BrowserAuthErrorMessage class containing string constants used by error codes and messages.

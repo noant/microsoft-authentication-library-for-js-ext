@@ -4,7 +4,7 @@ import { CryptoOps, CachedKeyPair } from "../../src/crypto/CryptoOps";
 import { GuidGenerator } from "../../src/crypto/GuidGenerator";
 import { BrowserCrypto } from "../../src/crypto/BrowserCrypto";
 import crypto from "crypto";
-import { PkceCodes } from "@azure/msal-common";
+import { PkceCodes } from "msal-common-ext";
 import { TEST_URIS } from "../utils/StringConstants";
 import { DatabaseStorage } from "../../src/cache/DatabaseStorage";
 

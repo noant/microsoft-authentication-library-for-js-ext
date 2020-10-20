@@ -2,7 +2,7 @@ import { expect } from "chai";
 import sinon from "sinon";
 import { XhrClient } from "../../src/network/XhrClient";
 import { HTTP_REQUEST_TYPE } from "../../src/utils/BrowserConstants";
-import { Constants, NetworkRequestOptions } from "@azure/msal-common";
+import { Constants, NetworkRequestOptions } from "msal-common-ext";
 import { BrowserAuthErrorMessage, BrowserAuthError } from "../../src/error/BrowserAuthError";
 
 describe("XhrClient.ts Unit Tests", () => {

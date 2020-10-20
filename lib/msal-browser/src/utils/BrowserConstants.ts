@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { AuthorizationUrlRequest, Constants } from "@azure/msal-common";
+import { AuthorizationUrlRequest, Constants } from "msal-common-ext";
 
 /**
  * Constants

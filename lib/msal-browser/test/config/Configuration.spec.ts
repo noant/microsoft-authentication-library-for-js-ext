@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { Configuration, buildConfiguration } from "../../src/config/Configuration";
 import { TEST_CONFIG, TEST_URIS } from "../utils/StringConstants";
-import { LogLevel, Constants } from "@azure/msal-common";
+import { LogLevel, Constants } from "msal-common-ext";
 import sinon from "sinon";
 
 /**

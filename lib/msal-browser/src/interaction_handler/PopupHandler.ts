@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Licensed under the MIT License.
  */
-import { UrlString, StringUtils, Constants, AuthorizationCodeRequest, CacheSchemaType, AuthorizationCodeClient } from "@azure/msal-common";
+import { UrlString, StringUtils, Constants, AuthorizationCodeRequest, CacheSchemaType, AuthorizationCodeClient } from "msal-common-ext";
 import { InteractionHandler } from "./InteractionHandler";
 import { BrowserAuthError } from "../error/BrowserAuthError";
 import { BrowserConstants } from "../utils/BrowserConstants";

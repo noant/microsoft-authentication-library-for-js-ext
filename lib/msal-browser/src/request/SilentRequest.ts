@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { SilentFlowRequest } from "@azure/msal-common";
+import { SilentFlowRequest } from "msal-common-ext";
 
 /**
  * SilentRequest: Request object passed by user to retrieve tokens from the

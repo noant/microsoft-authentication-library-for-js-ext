@@ -1,6 +1,6 @@
 import { expect } from "chai";
 import { BrowserAuthError, BrowserAuthErrorMessage } from "../../src/error/BrowserAuthError";
-import { AuthError } from "@azure/msal-common";
+import { AuthError } from "msal-common-ext";
 
 describe("BrowserAuthError Unit Tests", () => {
 

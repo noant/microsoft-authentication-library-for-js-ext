@@ -1,4 +1,4 @@
-import { Constants } from "@azure/msal-common";
+import { Constants } from "msal-common-ext";
 import { version } from "../../package.json";
 
 /**

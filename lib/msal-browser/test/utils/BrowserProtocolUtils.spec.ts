@@ -2,7 +2,7 @@ import { expect } from "chai";
 import sinon from "sinon";
 import { BrowserProtocolUtils, BrowserStateObject } from "../../src/utils/BrowserProtocolUtils";
 import { InteractionType } from "../../src/utils/BrowserConstants";
-import { ProtocolUtils } from "@azure/msal-common";
+import { ProtocolUtils } from "msal-common-ext";
 import { CryptoOps } from "../../src/crypto/CryptoOps";
 import { DatabaseStorage } from "../../src/cache/DatabaseStorage";
 import { TEST_HASHES } from "./StringConstants";

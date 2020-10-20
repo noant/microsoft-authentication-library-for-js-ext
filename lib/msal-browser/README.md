@@ -26,7 +26,7 @@
 
 The MSAL library for JavaScript enables client-side JavaScript applications to authenticate users using [Azure AD](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) work and school accounts (AAD), Microsoft personal accounts (MSA) and social identity providers like Facebook, Google, LinkedIn, Microsoft accounts, etc. through [Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview#identity-providers) service. It also enables your app to get tokens to access [Microsoft Cloud](https://www.microsoft.com/enterprise) services such as [Microsoft Graph](https://graph.microsoft.io).
 
-The `@azure/msal-browser` package described by the code in this folder uses the [`@azure/msal-common` package](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-common) as a dependency to enable authentication in Javascript Single-Page Applications without backend servers. This version of the library uses the OAuth 2.0 Authorization Code Flow with PKCE. To read more about this protocol, as well as the differences between implicit flow and authorization code flow, see the section [below](#implicit-flow-vs-authorization-code-flow-with-pkce). If you are looking for the version of the library that uses the implicit flow, please see the [`msal-core` library](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-core).
+The `@azure/msal-browser` package described by the code in this folder uses the [`msal-common-ext` package](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-common) as a dependency to enable authentication in Javascript Single-Page Applications without backend servers. This version of the library uses the OAuth 2.0 Authorization Code Flow with PKCE. To read more about this protocol, as well as the differences between implicit flow and authorization code flow, see the section [below](#implicit-flow-vs-authorization-code-flow-with-pkce). If you are looking for the version of the library that uses the implicit flow, please see the [`msal-core` library](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-core).
 
 This is an improvement upon the current `msal-core` library which will utilize the authorization code flow in the browser. Most features available in the old library will be available in this one, but there are nuances to the authentication flow in both. The `@azure/msal-browser` package does NOT support the implicit flow.
 
@@ -41,8 +41,8 @@ See [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/bl
 | Date | Release | Announcement | Main features |
 | ------| ------- | ---------| --------- |
 | | @azure/msal-browser v2.1.0 | | Throttling, Client and Server Telemetry, Access Token Proof-of-Possession (Tentative) | 
-| July 20th, 2020 | @azure/msal-browser v2.0.0 | [Release Notes](https://github.com/AzureAD/microsoft-authentication-library-for-js/releases/tag/msal-browser-v2.0.0) | Full version of the `@azure/msal-browser` package; relies on `@azure/msal-common` v1.0.0 |
-| May 11, 2020 | @azure/msal-browser v2.0.0-beta | No release notes | Beta version of the `@azure/msal-browser` package; relies on `@azure/msal-common` v1.0.0-beta |
+| July 20th, 2020 | @azure/msal-browser v2.0.0 | [Release Notes](https://github.com/AzureAD/microsoft-authentication-library-for-js/releases/tag/msal-browser-v2.0.0) | Full version of the `@azure/msal-browser` package; relies on `msal-common-ext` v1.0.0 |
+| May 11, 2020 | @azure/msal-browser v2.0.0-beta | No release notes | Beta version of the `@azure/msal-browser` package; relies on `msal-common-ext` v1.0.0-beta |
 | January 17, 2020 | @azure/msal-browser v2.0.0-alpha | No release notes | Alpha version of the `@azure/msal-browser` package with authorization code flow for SPAs working in dev; relies on msal-common v1.0.0-alpha |
 
 ## Prerequisites
@@ -138,7 +138,7 @@ If you are having issues with `lerna`, you can try the following:
 // Change to the msal-browser package directory
 cd lib/msal-browser/
 // Ensure you are using the local build of msal-common
-npm link @azure/msal-common
+npm link msal-common-ext
 // To run build only for browser package
 npm run build
 // To run build for common and browser package

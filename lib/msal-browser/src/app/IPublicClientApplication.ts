@@ -1,4 +1,4 @@
-import { AuthenticationResult, AccountInfo, EndSessionRequest } from "@azure/msal-common";
+import { AuthenticationResult, AccountInfo, EndSessionRequest } from "msal-common-ext";
 import { RedirectRequest } from "../request/RedirectRequest";
 import { PopupRequest } from "../request/PopupRequest";
 import { SilentRequest } from "../request/SilentRequest";
